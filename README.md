@@ -1,58 +1,38 @@
-# Create-React-App-Scss
-This project contains boilerplate code for using scss/sass with `create-react-app` generated app.
+# FE interview boilerplate
 
-Demo: https://mzohaibqc.github.io/create-react-app-sass/
+This boilerplate includes
+- React
+- Redux
+- SASS
+- Reselect
+- Json server
 
-Credit: SCSS styles/src is taken from here https://templated.co/
+## Start up
 
-## Folder Structure
-```
-/
-  README.md
-  node_modules/
-  package.json
-  public/
-    index.html
-    favicon.ico
-  src/
-    App.js
-    App.test.js
-    index.js
-    styles/
-      /components
-      main.scss
-```
+To start the applictaion run
+`npm install`
+`npm start`
 
-Step:
+To start the json server run
+`npm run json-server`
 
-- Create app `create-react-app app-name && cd app-name`
-- Add following dependencies
-  - yarn add -D react-app-rewired
-  - yarn add -D react-app-rewire-sass-modules
-  - yarn add -D sass-loader
-  - yarn add -D node-sass
 
-- Change npm `start` and `build` scripts from
-```json
-{
-  "start": "react-scripts start",
-  "build": "react-scripts build"
-}
-```
-to
-```json
-{
-  "start": "react-app-rewired start",
-  "build": "react-app-rewired build"
-}
-```
-- Add `config-overrides.js` file and add following code
-```js
-const rewireSass = require('react-app-rewire-sass-modules');
-module.exports = function override(config, env) {
-  config = rewireSass(config, env);
-  return config;
-}
-```
-- Add scss/sass styles in `/src/styles` directory
-- Run your app and you are good to go :) yahooo....
+## Json server
+
+The json server includes two tables, one of cat images under `/cats` and one of dog images under `/dogs`.
+The json server will run on port `3001`.
+
+
+# The Project
+
+Your making a site of your favorite type of animal (either a cat or dog obviously) and you want to display a grid of images where each image is centered with a 1:1 aspect ratio.
+This grid needs to be responsive down to mobile.
+
+Each image should have a click event that opens a modal and displays the image centered so you can adimre each creatures individual glory.
+
+The modal should be made by you and not utilize an exteranl libraries.
+The modal should display full screen with a background overlay and the contentent centered in the viewport. Please a nice entrance and exit animation.
+
+Images for your favorite animal are available via json server.
+
+You can add any additional flair to you website as well as tests if you have time.
