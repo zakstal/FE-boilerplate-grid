@@ -25,14 +25,12 @@ The json server will run on port `3001`.
 
 # The Project
 
-Your making a site of your favorite type of animal (either a cat or dog obviously) and you want to display a grid of images where each image is centered with a 1:1 aspect ratio.
-This grid needs to be responsive down to mobile.
+Your making a site of your favorite type of animal (dogs obviously) and you want to display an array of images. These images are not square and have different heights. You want to arrange the images in variable number of columns of equal width within a container so that each image in a column is flush with its siblings top or bottom (or with some gutter space). This will look very similar to the [pintrest layout](https://www.pinterest.com/pin/713398397203052958/)
 
-Each image should have a click event that opens a modal and displays the image centered so you can adimre each creatures individual glory.
+The application has some code already set up. `src/containers/GridContainer.js` contains on api call to the `/dogs` endpoint putting the returned data into state. If you choose you can add load this data into Redux.
 
-The modal should be made by you and not utilize an exteranl libraries.
-The modal should display full screen with a background overlay and the contentent centered in the viewport. Please a nice entrance and exit animation.
+Depending on time please do the following:
 
-Images for your favorite animal are available via json server.
-
-You can add any additional flair to you website as well as tests if you have time.
+1. Create the staggered grid.
+2. Add sorting
+3. Animate the grid items on sort.
