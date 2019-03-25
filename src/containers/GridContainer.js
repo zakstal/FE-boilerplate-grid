@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import _ from 'lodash';
-import Search from '../components/Search';
+import Button from '@material-ui/core/Button';
 
 class GridContainer extends Component {
   render() {
 
     return (
       <div className="grid-container">
-        <Search />
       </div>
     )
   }
