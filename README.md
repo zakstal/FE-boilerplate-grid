@@ -34,3 +34,6 @@ Depending on time please do the following:
 1. Create the staggered grid.
 2. Add sorting
 3. Animate the grid items on sort.
+
+The animated sorting should look like so:
+![dogs grid](https://github.com/zakstal/FE-boilerplate-grid/blob/master/img/dogs.gif)
